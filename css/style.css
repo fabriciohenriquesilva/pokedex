@@ -40,6 +40,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 8px 0 0 8px;
+
 }
 
 .header__icon-search img {
@@ -60,9 +61,10 @@ body {
     background-color: var(--zinc-700);
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
 
-    justify-content: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .footer {
@@ -73,7 +75,7 @@ body {
 }
 
 .content__pokemon-card {
-    margin-top: 3rem;
+    margin: 3rem 4rem 2rem;
     width: 192px;
     height: 143px;
     border: 1px solid var(--red-700);
@@ -88,9 +90,25 @@ body {
     
 }
 
+.content__pokemon_id {
+    align-self: flex-start;
+    margin: -1rem 0 0 0.5rem;
+    font-weight: 600;
+}
+
 .content__pokemon-picture {
     width: 110px;
-    margin-top: -50%;
+    margin-top: -40%;
+    display: block;
+}
+
+.content__pokemon-name {
+    display: block;
+}
+
+.content__pokemon-types {
+    margin-top: 0.25rem;
+    font-weight: 600;
 }
 
 .grass {
