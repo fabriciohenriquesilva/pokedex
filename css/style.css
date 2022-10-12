@@ -77,7 +77,25 @@ body {
     color: var(--zinc-700);
     padding: 0.5rem 0;
     border-radius: 0 8px 8px 0;
+}
 
+.buttons__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button__type {
+    margin-bottom: 0.875rem;
+    width: 60%;
+    height: 2rem;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -137,8 +155,17 @@ body {
     font-weight: 600;
 }
 
+/* Button styles for pokémon types */
+
 .grass {
     background-color: var(--lime-300);
+    border-radius: 8px;
+    color: rgba(0,0,0, 0.75);
+    padding: 0 0.5rem;
+}
+
+.ground {
+    background-color: #fdba74;
     border-radius: 8px;
     color: rgba(0,0,0, 0.75);
     padding: 0 0.5rem;
