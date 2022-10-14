@@ -1,7 +1,7 @@
 @import url('reset.css');
 @import url('pokemon-types.css');
 
-body { 
+body {
     display: grid;
     grid-template-rows: 100px 2fr 1fr;
     grid-template-columns: 1fr 4fr;
@@ -50,7 +50,7 @@ body {
     grid-row: 1/4;
 
     background-color: var(--zinc-800);
-    
+
 }
 
 .filter__group {
@@ -60,13 +60,13 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 2rem 0;
-    
+
 }
 
 .filter__funnel-icon {
     background-color: var(--zinc-250);
     height: 2.5rem;
-    border-radius: 8px 0 0 8px;    
+    border-radius: 8px 0 0 8px;
 }
 
 .filter__funnel-icon img {
@@ -91,6 +91,10 @@ body {
     margin-bottom: 0.875rem;
     width: 60%;
     height: 2rem;
+
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 0 0.5rem;
 
     font-weight: 600;
     cursor: pointer;
@@ -127,13 +131,13 @@ body {
     border: 1px solid var(--red-700);
     background-color: var(--zinc-800);
     border-radius: 8px;
-    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
-    
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .content__pokemon_id {
@@ -156,4 +160,3 @@ body {
     margin-top: 0.25rem;
     font-weight: 600;
 }
-
