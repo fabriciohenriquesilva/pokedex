@@ -1,0 +1,29 @@
+/* Button styles for pokémon types */
+
+.grass {
+    background-color: var(--lime-300);
+    border-radius: 8px;
+    color: rgba(0,0,0, 0.75);
+    padding: 0 0.5rem;
+}
+
+.ground {
+    background-color: #fdba74;
+    border-radius: 8px;
+    color: rgba(0,0,0, 0.75);
+    padding: 0 0.5rem;
+}
+
+.fire {
+    background-color: #ea580c;
+    border-radius: 8px;
+    color: rgba(0,0,0, 0.75);
+    padding: 0 0.5rem;
+}
+
+.water {
+    background-color: #38bdf8;
+    border-radius: 8px;
+    color: rgba(0,0,0, 0.75);
+    padding: 0 0.5rem;
+}

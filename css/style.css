@@ -1,8 +1,9 @@
 @import url('reset.css');
+@import url('pokemon-types.css');
 
 body { 
     display: grid;
-    grid-template-rows: 100px 800px 1fr;
+    grid-template-rows: 100px 2fr 1fr;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -156,18 +157,3 @@ body {
     font-weight: 600;
 }
 
-/* Button styles for pokémon types */
-
-.grass {
-    background-color: var(--lime-300);
-    border-radius: 8px;
-    color: rgba(0,0,0, 0.75);
-    padding: 0 0.5rem;
-}
-
-.ground {
-    background-color: #fdba74;
-    border-radius: 8px;
-    color: rgba(0,0,0, 0.75);
-    padding: 0 0.5rem;
-}
