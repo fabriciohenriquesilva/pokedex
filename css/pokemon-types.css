@@ -1,10 +1,10 @@
 /* Button styles for pokémon types */
 
-.content__pokemon-type-item {
+.pokemon-card__type {
     border-radius: 8px;
     color: rgba(0, 0, 0, 0.65);
     padding: 0 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0 0.25rem;
 
     display: flex;
     justify-content: center;
