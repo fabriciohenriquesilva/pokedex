@@ -1,7 +1,20 @@
 'use strict'
 
 const uriPokemon = 'https://pokeapi.co/api/v2/pokemon/';
+const uriPokemonTypes = 'https://pokeapi.co/api/v2/type/';
 const mainContentHtml = document.querySelector('.content');
+
+let types = [];
+
+async function getPokemonTypes(){
+    for(let i = 1; i <= 18; i++){
+        const res = await fetch(uriPokemonTypes + i)
+        let type = await res.json();
+
+        types.push(type);
+    }
+    createBadgesTypes(types);
+}
 
 async function getPokemonData() {
     for (let i = 1; i <= 151; i++) {
@@ -29,4 +42,17 @@ function createPokemonCard(pokemonData) {
         </article>`;
 }
 
+function createBadgesTypes(pokemonTypes) {
+    const badgesElement = document.querySelector('.badges__group');
+    badgesElement.innerHTML = '';
+
+    pokemonTypes.forEach( type => {
+        badgesElement.innerHTML += `
+            <div class="badges__type ${type.name}" data-type="${type.name}">
+                ${type.name}
+            </div>`;
+    });
+}
+
 getPokemonData();
+getPokemonTypes();
