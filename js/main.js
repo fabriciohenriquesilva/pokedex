@@ -18,7 +18,7 @@ async function getPokemonTypes(){
 }
 
 async function getPokemonData() {
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 1; i <= 15; i++) {
         let res = await fetch(uriPokemon + i)
         let pokemon = await res.json();
 

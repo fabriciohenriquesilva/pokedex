@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --zinc-800: #27272A;
+    --zinc-700: #3f3f46;
+    --lime-300: #bef300;
+    --zinc-250: #D9D9D9;
+    --red-800: #991b1b;
+    --red-700: #b91c1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+app-root {
+    display: grid;
+    grid-template-rows: 100px minmax(768px, auto) 100px;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* Button styles for pokémon types */
+
+.pokemon-card__type {
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 0 0.5rem;
+    margin: 0 0.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grass {
+    background-color: #7ac74c;
+}
+
+.ground {
+    background-color: #e2bf65;
+}
+
+.fire {
+    background-color: #ee8130;
+}
+
+.water {
+    background-color: #6990f0;
+}
+
+.poison {
+    background-color: #a33ea1;
+}
+
+.electric {
+    background-color: #facc15;
+}
+
+.bug {
+    background-color: #94ba2c;
+}
+
+.normal {
+    background-color: #a8a77a;
+}
+
+.ice {
+    background-color: #96d9d6;
+}
+
+.fighting {
+    background-color: #c22e28;
+}
+
+.flying {
+    background-color: #a98ff3;
+}
+
+.psychic {
+    background-color: #f95587;
+}
+
+.rock {
+    background-color: #b6a136;
+}
+
+.ghost {
+    background-color: #735797;
+}
+
+.dragon {
+    background-color: #6f35fc;
+}
+
+.dark {
+    background-color: #705746;
+}
+
+.steel {
+    background-color: #b7b7ce;
+}
+
+.fairy {
+    background-color: #d685ad;
+}

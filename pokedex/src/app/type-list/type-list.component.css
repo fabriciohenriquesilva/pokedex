@@ -1,0 +1,49 @@
+.filter__group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.filter__funnel-icon {
+    background-color: var(--zinc-250);
+    height: 2.5rem;
+    border-radius: 8px 0 0 8px;
+}
+
+.filter__funnel-icon img {
+    padding: 0.25rem 0.5rem 0;
+}
+
+.filter__tag {
+    width: 70%;
+    background-color: var(--zinc-250);
+    color: var(--zinc-700);
+    padding: 0.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.badges__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badges__type {
+    margin-bottom: 0.875rem;
+    width: 60%;
+    height: 2rem;
+
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 0 0.5rem;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
