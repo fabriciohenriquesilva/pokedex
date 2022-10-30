@@ -5,7 +5,8 @@
     <div class="filter__tag">Filter by Pokémons types</div>
 </div>
 <div class="badges__group">
-    <div *ngFor="let type of types" class="badges__type {{ type }}">
+    <div *ngFor="let type of types" class="badges__type {{ type }}"
+    (click)="filterPokemonsByType()" [attr.data-type]="type">
         {{ type }}
     </div>
 </div>

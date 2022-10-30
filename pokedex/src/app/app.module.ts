@@ -8,6 +8,7 @@ import { PokemonGalleryComponent } from './components/pokemon-gallery/pokemon-ga
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     TypeListComponent,
     PokemonGalleryComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PokemonCardComponent
   ],
   imports: [
     BrowserModule,

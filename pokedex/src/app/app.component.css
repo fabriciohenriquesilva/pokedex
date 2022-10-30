@@ -16,7 +16,7 @@
 
     background-color: var(--zinc-800);
 }
-
+/* 
 .content {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -27,7 +27,7 @@
 
     justify-content: space-around;
     align-content: flex-start;
-}
+} */
 
 .footer {
     grid-column: 2/3;

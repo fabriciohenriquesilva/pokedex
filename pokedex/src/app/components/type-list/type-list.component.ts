@@ -14,11 +14,15 @@ export class TypeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getTypes().subscribe((response: any) => {
-      response.results.map((type: any) => {
+      response.results.forEach((type: any) => {
         this.types.push(type.name);
       });
     });
-    console.log(this.types);
+    // console.log(this.types);
+  }
+
+  filterPokemonsByType(){
+
   }
 
 }

@@ -1,0 +1,12 @@
+<article *ngFor="let pokemon of pokemons" class="pokemon-card">
+    <div class="pokemon-card__id" data-id="">{{ pokemon.id }}</div>
+    <img src="{{ pokemon.image }}"
+        alt="" class="pokemon-card__picture">
+    <h2 class="pokemon-card__name">{{ pokemon.name }}</h2>
+    <ul class="pokemon-card__types">
+        <li *ngFor="let index of pokemon.types" 
+            class="pokemon-card__type {{ index.type.name }}">
+            {{ index.type.name }}
+        </li>
+    </ul>
+</article>
