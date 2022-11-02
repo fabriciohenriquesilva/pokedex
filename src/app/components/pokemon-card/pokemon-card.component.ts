@@ -14,18 +14,17 @@ export class PokemonCardComponent implements OnInit {
   constructor(private service: PokemonService) { }
 
   ngOnInit(): void {
-    this.service.getPokemonsList().forEach(response => {
-      response.subscribe(pokemon => {
-        const { id, name, sprites, types } = pokemon;
-        let p: Pokemon = {
-          id: id,
-          name: name,
-          image: sprites.other["official-artwork"]["front_default"],
-          types: types
-        }
-        this.pokemons.push(p);
-      });
+    this.pokemons = this.service.getPokemonsList();
+  }
+
+  ngDoCheck(){
+    this.service.eventEmitter.subscribe(filteredPokemons => {
+      this.pokemons = filteredPokemons;
     });
+  }
+
+  getPokemonList(): readonly Pokemon[] {
+    return this.pokemons;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/interface/pokemon';
 import { PokemonService } from '../../service/pokemon.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { PokemonService } from '../../service/pokemon.service';
 export class TypeListComponent implements OnInit {
 
   types: string[] = [];
+  pokemons: Pokemon[] = [];
 
   constructor(private service: PokemonService) { }
 
@@ -18,11 +20,10 @@ export class TypeListComponent implements OnInit {
         this.types.push(type.name);
       });
     });
-    // console.log(this.types);
   }
 
-  filterPokemonsByType(){
-
+  filterPokemonsByType(type: string){
+    this.service.filterPokemons(type);
   }
 
 }
